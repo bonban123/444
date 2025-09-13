@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juego de Memoria</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clima RGB</title>
+<link rel="stylesheet" href="style2.css" />
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <h1>🃏 Juego de Memoria</h1>
-
-  <!-- Panel con información -->
-  <div class="info">
-    <p>Intentos: <span id="intentos">0</span></p>
-    <p>Tiempo: <span id="tiempo">0</span> s</p>
-<p>Límite: <span id="limite">60</span> s</p>
-    <button id="reiniciar">🔄 Reiniciar</button>
-  </div>
-
-  <!-- Contenedor de cartas -->
-  <div class="tablero" id="tablero">
-    <!-- Cartas generadas por JS -->
-  </div>
-
-  <!-- Mensaje de victoria -->
-  <div id="victoria" class="oculto">
-    🎉 ¡Ganaste en <span id="final-intentos"></span> intentos y <span id="final-tiempo"></span> segundos!
-  </div>
-
-  <script src="script2.js"></script>
+<!-- Popup inicial -->
+<div id="popup" class="popup">
+<div class="popup-content">
+<h2>🌍 Permiso de ubicación</h2>
+<p>Por favor permite el acceso a tu ubicación para mostrar el clima actual.</p>
+<button id="okBtn">Entendido</button>
+</div>
+</div>
+<!-- Elementos dinámicos se crean desde JS -->
 </body>
 </html>
+ 
