@@ -3,30 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juego de Memoria</title>
+  <title>Landing Page - Curso Online</title>
+  <!-- Vinculamos el CSS externo -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🃏 Juego de Memoria</h1>
 
-  <!-- Panel con información -->
-  <div class="info">
-    <p>Intentos: <span id="intentos">0</span></p>
-    <p>Tiempo: <span id="tiempo">0</span> s</p>
-<p>Límite: <span id="limite">60</span> s</p>
-    <button id="reiniciar">🔄 Reiniciar</button>
-  </div>
+  <!-- ====== HEADER ====== -->
+  <header>
+    <h1>Curso Online de Meditación</h1>
+    <p>Aprende a relajarte y mejorar tu bienestar</p>
+  </header>
 
-  <!-- Contenedor de cartas -->
-  <div class="tablero" id="tablero">
-    <!-- Cartas generadas por JS -->
-  </div>
+  <!-- ====== SECCIÓN PRINCIPAL ====== -->
+  <section class="hero">
+    <h2>Regístrate para más información</h2>
+    <p>Déjanos tus datos y recibe acceso a recursos gratuitos, tips y mucho más.</p>
 
-  <!-- Mensaje de victoria -->
-  <div id="victoria" class="oculto">
-    🎉 ¡Ganaste en <span id="final-intentos"></span> intentos y <span id="final-tiempo"></span> segundos!
-  </div>
+    <!-- ====== FORMULARIO ====== -->
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Nombre completo">
+      <div id="errorName" class="error"></div>
 
-  <script src="script2.js"></script>
+      <input type="email" id="email" placeholder="Correo electrónico">
+      <div id="errorEmail" class="error"></div>
+
+      <textarea id="message" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+      <div id="errorMessage" class="error"></div>
+
+      <button type="submit">Suscríbete</button>
+    </form>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <p>&copy; 2025 Curso de Meditación - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Vinculamos el JavaScript externo -->
+  <script src="script.js"></script>
 </body>
 </html>
